@@ -84,25 +84,36 @@
             <h1 id="message">Message Me</h1>
         </header>
         
-        <div class="form-container">
-            <div class="form">
-                <form name="message-form" onsubmit="return validationForm()">
-                Nama :<input required name="name" type="text" placeholder="full name, e.g Nina Anggraini"/><br/>
-        
-                Birth Date :
-                <input required name="birth-date" input type="date"/><br/>
-                
-                Gender : <br/>
-                <label><input type="radio" id= "male" name="gender" value="male" /> Male</label>
-                <label><input type="radio" id="female" name="gender" value="female" /> Female</label><br/>
-                
-                Pesan :
-                <textarea placeholder="your message" nama="message-coloum"></textarea><br/>
+        <section id="message slide" class="form-container">
+            <form name="message-form" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Message</legend>
+                    <p>
+                        <label>Name : </label>
+                        <input required name="name" type="text" placeholder="full name, e.g Nina Anggraini"/>
+                    </p>
 
-                <input type="submit" value="submit"/>
-                </form>
-            </div>
+                    <p>
+                        <label>Birth Date : </label>
+                        <input required name="birth-date" input type="date"/>
+                    </p>
 
+                    <p>
+                        <label>Gender : </label>
+                        <label><input type="radio" id= "male" name="gender" value="male" /> Male</label>
+                        <label><input type="radio" id="female" name="gender" value="female" /> Female</label>
+                    </p>
+
+                    <p>
+                        <label>Message : </label>
+                        <textarea name="message" placeholder="your message"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="send">
+                    </p>
+                </fieldset>
+
+            <!--BAGIAN FORM RESULT-->
             <fieldset>
                 <legend>Result</legend>
                 <div class="result">

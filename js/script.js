@@ -52,7 +52,7 @@ function validateform() {
     const name = document.forms["message-form"]["name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
     const gender = document.forms["message-form"]["gender"].value;
-    const message = document.forms["message-form"]["message-coloum"].value;
+    const message = document.forms["message-form"]["message"].value;
     
     if (name == "" || birthDate == "" || gender == "" || message == "") {
         alert("this form cannot be empty");
@@ -61,4 +61,3 @@ function validateform() {
     setSenderUI(name, birthDate, gender, message);
     return false;
 }
-
