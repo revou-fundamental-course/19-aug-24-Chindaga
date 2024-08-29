@@ -85,7 +85,7 @@
         </header>
         
         <section id="message slide" class="form-container">
-            <form name="message-form" onsubmit="return validateForm()">
+            <form name="message-form" method="post" onsubmit="return validateForm()">
                 <fieldset>
                     <legend>Message</legend>
                     <p>
@@ -109,7 +109,7 @@
                         <textarea name="message" placeholder="your message"></textarea>
                     </p>
                     <p>
-                        <input type="submit" name="submit" value="send">
+                        <button type="button" onclick="formValidation()">send</button>
                     </p>
                 </fieldset>
 
@@ -134,7 +134,7 @@
         <p>Created by Ain</p>
     </footer>
 
-    <script src="js\script.js"></script>
+<script src="js\script.js"></script>
 </body>
  
 </html>

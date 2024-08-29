@@ -46,9 +46,10 @@ function setSenderUI(name, birthDate, gender, message) {
     document.getElementById("sender-birth-date").innerHTML = birthDate;
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-message").innerHTML = message;
+    console.log("sender-name")
 }
 
-function validateform() {
+function formValidation() {
     const name = document.forms["message-form"]["name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
     const gender = document.forms["message-form"]["gender"].value;
