@@ -1,0 +1,88 @@
+/* Ini CSS */
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        flex-direction: column;
+    }
+
+    .nav-container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center
+    }
+
+    .logo-icon{
+        margin-bottom: 14px;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(../asset/profil.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.nav-item{
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.banner-image{
+    height: 450px;
+    width: 1341px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.pict1 {
+    background-image: url(../asset/pict1.jpg);
+}
+
+.pict2 {
+    background-image: url(../asset/pict2.jpg);
+}
+
+.pict3 {
+    background-image: url(../asset/pict3.jpg);
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item{
+    height: 100px;
+    text-align: -webkit-center;
+}
+
+.profile-img{
+    height: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.text-footer{
+    text-align: end;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS\styles.css">
+</head>
+    
+<body>
+    <!--BAGIAN NAVIGASI ATAS-->
+    <nav class="header-wrapper">
+       
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+
+        <section class="nav-container">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#my-profile" class="nav-item">My Profile</a>
+            <a href="#work" class="nav-item">Experience</a>
+            <a href="#message" class="nav-item">Message Me</a>
+        </section>
+    </nav>
+
+    <hr />
+
+    <!--BAGIAN INTI YAITU ISI DARI ARTIKEL-->
+    <!--BANNER AUTOMATIC-->
+    <main>
+        <article class="home-wrapper">
+            <header id="home">
+                <h1>Hallo <span id="name">"Name"</span> Welcome to my website</h1>
+            </header>
+            <button id="change-name">change name</button>
+            <p>This website is all about a person named Ain Hartianingrum</p>
+            <div class="banner-image pict1"></div>
+            <div class="banner-image pict2"></div>
+            <div class="banner-image pict3"></div>
+        </article>
+
+    <hr />
+
+       <!--BAGIAN MY PROFIL-->
+        <section id="my-profile">
+            <header>
+                <h1>My Profile</h1>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Skill</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Interest</h2>
+                </div>
+            </section>
+        </section>
+
+    <hr />
+    
+       <!--BAGIAN EXPERIENCE-->
+        <section id="work">
+            <header>
+                <h1>Experience</h1>
+            </header>
+            <ol>
+                <li>Intern in Ministry of Marine Affairs and Fisheries of Jawa Tengah Province (3 Oktober-10 Desember 2022)</li>
+            </ol>
+
+        <hr />
+       
+           <!--BAGIAN FORM-->
+        <header>
+            <h1 id="message">Message Me</h1>
+        </header>
+        
+        <div class="form-container">
+            <div class="form">
+                <form name="message-form" onsubmit="return validationForm()">
+                Nama :<input required name="name" type="text" placeholder="full name, e.g Nina Anggraini"/><br/>
+        
+                Birth Date :
+                <input required name="birth-date" input type="date"/><br/>
+                
+                Gender : <br/>
+                <label><input type="radio" id= "male" name="gender" value="male" /> Male</label>
+                <label><input type="radio" id="female" name="gender" value="female" /> Female</label><br/>
+                
+                Pesan :
+                <textarea placeholder="your message" nama="message-coloum"></textarea><br/>
+
+                <input type="submit" value="submit"/>
+                </form>
+            </div>
+
+            <fieldset>
+                <legend>Result</legend>
+                <div class="result">
+                    <p>Name: <span id="sender-name"></span></p>
+                    <p>Birth Date: <span id="sender-birth-date"></span></p>
+                    <p>Gender: <span id="sender-gender"></span></p>
+                    <p>Message: <span id="sender-message"></span></p>
+                </div>
+            </fieldset>
+        </div>
+        </section>
+    </main>
+
+    <hr />
+    
+     <!--BAGIAN AKHIR-->
+    <footer class="text-footer">
+        <p>Created by Ain</p>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+ 
+</html>
+
+   <!--BELUM BISA CONFIG KE GITHUB-->
